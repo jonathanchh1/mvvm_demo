@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+
+
+
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         binding.contactList.setLayoutManager(layoutManager);
@@ -40,10 +44,17 @@ public class MainActivity extends AppCompatActivity {
                 "Until lately, rugby has been considered a sport played only by men. What are the consequences...",
                 true, "android.resource://com.jonat.emi.myapplication/drawable/rugby", 11));
 
+
+
         ArticleAdapter mAdapter = new ArticleAdapter(articles, this);
         binding.contactList.setAdapter(mAdapter);
 
+
     }
+
+
+
+
 
 
 }

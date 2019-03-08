@@ -60,7 +60,7 @@ public class ArticleViewModel extends BaseObservable {
 
     public void setRead(boolean read){
         if(read && !mArticle.isRead()){
-            setTitle("READ :" + getTitle());
+            setTitle("Read : " + getTitle());
         }
         mArticle.setRead(read);
     }
